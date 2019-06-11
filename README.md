@@ -37,7 +37,7 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
 ```
 	/**
 	 * Caso de prueba que valida que cuando se reciban 10 llamadas, existan 5 
-	 * operadores y 5 supervisores 5 las llamadas sean procesadas por 5 
+	 * operadores y 5 supervisores, las llamadas sean procesadas por 5 
 	 * supervisores y 5 operadores
 	*/
 	@Test
@@ -47,7 +47,7 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
 		this.dispatcherLauncherDTO = new DispatcherLauncherDTO();
 		this.dispatcherResultDTO = new DispatcherResultDTO();
 		
-		int[ ] timeRange = {1,2};
+		int[ ] timeRange = {5,10};
 		this.dispatcherLauncherDTO.setCallsQuantity(10);
 		this.dispatcherLauncherDTO.setOperatorsQuantity(5);
 		this.dispatcherLauncherDTO.setSupervisorsQuantity(5);
