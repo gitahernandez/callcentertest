@@ -68,7 +68,7 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
 	}
 	
 	
-	Print de la consola
+Print de la consola
 
 LLAMADA RECIBIDA : El OPERATOR 4 acaba de recibir la llamada 4
 LLAMADA RECIBIDA : El OPERATOR 5 acaba de recibir la llamada 5
