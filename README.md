@@ -36,7 +36,9 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
 
 ```
 	/**
-	 * Caso de prueba que valida que cuando se reciban 10 llamadas, existan 5 operadores y 5 supervisores 5 de las 	llamadas sean procesadas por 5 supervisores.
+	 * Caso de prueba que valida que cuando se reciban 10 llamadas, existan 5 
+	 * operadores y 5 supervisores 5 las llamadas sean procesadas por 5 
+	 * supervisores y 5 operadores
 	*/
 	@Test
 	public void testSupervisorRoleAnswers() {
@@ -92,7 +94,6 @@ El SUPERVISOR 4 contestó un total de 1 llamadas , felicitaciones SUPERVISOR 4
 El SUPERVISOR 5 contestó un total de 1 llamadas , felicitaciones SUPERVISOR 5
 El MANAGER 1 contestó un total de 0 llamadas , felicitaciones MANAGER 1
 
-	
 	
 ## Caso de prueba de más de 10 llamadas simultáneas, 6 operadores, 2 supervisores y 1 manager.
 
