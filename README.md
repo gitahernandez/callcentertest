@@ -30,7 +30,7 @@ Contiene los hilos necesarios para procesar las llamadas.
 
 ## LLamada en cola
 
-Cuando se reciba una llamada y no exista un empleado disponible para atenderla, esta llamada se encola y será atendida cuando  un empleado este libre, es decir cuando un empleado finalize la llamada que esta atendiendo en el momento.
+Cuando se reciba una llamada y no exista un empleado disponible para atenderla, esta llamada se encola y será atendida cuando  un empleado este libre, es decir cuando un empleado finalice la llamdada que esta atendiendo en el momento.
 
 ## Caso de prueba de más de 10 llamadas simultáneas
 
@@ -39,7 +39,7 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
   * Caso de prueba que valida que cuando se reciban 20 llamadas, 
   * el dispatcher procese 10 y deje 10 en cola y espere cuando     
   * hayan empleados disponibles para atender las restantes
-  * finalmente debe atender las 20 llamdas en su totalidad.
+  * finalmente debe atender las 20 llamadas en su totalidad.
   */
 	@Test
 	public void testAnswersMoreThan10Calls() {
