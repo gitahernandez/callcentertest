@@ -1,9 +1,9 @@
 
 # Prueba Técnica Para Almundo 
-Autor: Andrés Felipe Hernández Rocha
-Fecha: 11 Junio de 2019
+* Autor: Andrés Felipe Hernández Rocha *
+* Fecha: 11 Junio de 2019 *
 
-_El proyecto posee 4 paquetes, El proyecto fue implemenatdo utilizando java 1.8_
+_El proyecto fue implemenatdo utilizando java 1.8, el proyecto posee los siguientes 4 paquetes _
 
 ## callcenter.unittest
 
