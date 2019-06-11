@@ -32,6 +32,7 @@ public class DistpatchTest {
 		this.dispatcherLauncherDTO = new DispatcherLauncherDTO();
 		this.dispatcherResultDTO = new DispatcherResultDTO();
 		
+		// rango de tiempo en segundos que puede tardar la llamada.
 		int[ ] timeRange = {5,7};
 		// cantidad de llamadas
 		this.dispatcherLauncherDTO.setCallsQuantity(10);
@@ -62,6 +63,7 @@ public class DistpatchTest {
 		this.dispatcherLauncherDTO = new DispatcherLauncherDTO();
 		this.dispatcherResultDTO = new DispatcherResultDTO();
 		
+		// rango de tiempo en segundos que puede tardar la llamada.
 		int[ ] timeRange = {5,7};
 		// cantidad de llamadas
 		this.dispatcherLauncherDTO.setCallsQuantity(20);
