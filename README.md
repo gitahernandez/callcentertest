@@ -1,8 +1,8 @@
 
 # Prueba Técnica Para Almundo / Call Center
-* Autor: Andrés Felipe Hernández Rocha *
-* email: ingeingero@gmail.com *
-* Fecha: 11 Junio de 2019 *
+* Autor: Andrés Felipe Hernández Rocha
+* email: ingeingero@gmail.com
+* Fecha: 11 Junio de 2019
 
 ## Paquetes
 
@@ -30,5 +30,40 @@ Contiene los hilos necesarios para procesar las llamadas.
 
 ## LLamada en cola
 
-Cuando se reciba una llamada y no existe un empleado disponible para contestarla, esta llamada se encola y será atendida cuando exista un empleado disponible, es decir cuando un empleado finalize la llamada en la que se ecuentra ocupado.
+Cuando se reciba una llamada y no exista un empleado disponible para atenderla, esta llamada se encola y será atendida cuando  un empleado este libre, es decir cuando un empleado finalize la llamada que esta atendiendo en el momento.
+
+## Caso de prueba de más de 10 llamadas simultáneas
+
+```
+  /**
+  * Caso de prueba que valida que cuando se reciban 20 llamadas , el dispatcher procese 10 y deje 10 en cola y espere cuando     * hayan empleados disponibles para atender las restantes
+  * finalmente debe atender las 20 llamdas en su totalidad.
+  */
+	@Test
+	public void testAnswersMoreThan10Calls() {
+		
+		this.dispatcher = new Dispatcher();
+		this.dispatcherLauncherDTO = new DispatcherLauncherDTO();
+		this.dispatcherResultDTO = new DispatcherResultDTO();
+		
+		// rango de tiempo en segundos que puede tardar la llamada.
+		int[ ] timeRange = {5,7};
+		// cantidad de llamadas
+		this.dispatcherLauncherDTO.setCallsQuantity(20);
+		// cantidad de operarios disponibles para contestar las llamdas
+		this.dispatcherLauncherDTO.setOperatorsQuantity(6);
+		// cantidad de supervisores disponibles para contestar las llamdas
+		this.dispatcherLauncherDTO.setSupervisorsQuantity(2);
+		// cantidad de managers disponibles para contestar las llamdas
+		this.dispatcherLauncherDTO.setManagersQuantity(1);
+		// rango de tiempo en segundos que pueden durar las llamadas.
+		this.dispatcherLauncherDTO.setTimeRange(timeRange);
+		
+		this.dispatcherResultDTO = dispatcher.dispatchCall(dispatcherLauncherDTO);
+		
+		assertEquals(20, this.dispatcherResultDTO.getProccesedCallsQuantity());
+		
+	}
+```
+
 
