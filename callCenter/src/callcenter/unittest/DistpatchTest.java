@@ -36,9 +36,9 @@ public class DistpatchTest {
 		int[ ] timeRange = {5,7};
 		// cantidad de llamadas
 		this.dispatcherLauncherDTO.setCallsQuantity(10);
-		// cantidad de operarios disponibles para contestar las llamdas.
+		// cantidad de operarios disponibles para contestar las llamadas.
 		this.dispatcherLauncherDTO.setOperatorsQuantity(10);
-		// cantidad de supervisores disponibles para contestar las llamdas
+		// cantidad de supervisores disponibles para contestar las llamadas
 		this.dispatcherLauncherDTO.setSupervisorsQuantity(5);
 		// cantidad de managers disponibles para contestar las llamdas
 		this.dispatcherLauncherDTO.setManagersQuantity(1);
@@ -53,8 +53,8 @@ public class DistpatchTest {
 	
 	
 	/**
-	 * Caso de prueba que valida que cuando se reciban 20 llamadas , el dispatcher procese 10 y deje 10 en cola y espere cuando hayan empleados disponibles para atender las restantes
-	 * finalmente debe atender las 20 llamdas en su totalidad.
+	 * Caso de prueba que valida que cuando se reciban 20 llamadas , el dispatcher procesa 10 y deja 10 en cola y espera cuando hayan empleados disponibles para atender las restantes
+	 * finalmente debe atender las 20 llamadas en su totalidad.
 	*/
 	@Test
 	public void testAnswersMoreThan10Calls() {

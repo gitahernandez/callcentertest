@@ -77,7 +77,7 @@ public class Dispatcher {
 			else if (obj.getEmployee().getType().equals(ROLE_OPERATOR_NAME)) {
 				proccesedCallsQuantityByOperator = proccesedCallsQuantityByOperator + obj.getCallsCount();
 			}
-			System.out.println("El empleado " + obj.getEmployee().getName() + " contestó " + obj.getCallsCount() + " llamadas" );
+			System.out.println("El " + obj.getEmployee().getName() + " contestó un total de " + obj.getCallsCount() + " llamadas , felicitaciones " + obj.getEmployee().getName() );
 		}
 		
 		dispatcherResultDTO =  new DispatcherResultDTO();
@@ -176,9 +176,9 @@ public class Dispatcher {
     */
 	public static void main(String[] args) {
 		DispatcherLauncherDTO dispatcherLauncherDTO = new DispatcherLauncherDTO();
-		int[ ] timeRange = {5,7};
+		int[ ] timeRange = {5,10};
 		dispatcherLauncherDTO.setCallsQuantity(10);
-		dispatcherLauncherDTO.setOperatorsQuantity(10);
+		dispatcherLauncherDTO.setOperatorsQuantity(5);
 		dispatcherLauncherDTO.setSupervisorsQuantity(5);
 		dispatcherLauncherDTO.setManagersQuantity(1);
 		dispatcherLauncherDTO.setTimeRange(timeRange);

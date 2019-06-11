@@ -42,9 +42,9 @@ public class EmployeeInCall extends Thread {
 			try {
 				callId=callAdmin.endCall();
 				this.callsCount = this.callsCount +1;
-				System.out.println("El empleado " + this.employee.getName() + " recibe la llamada " + callId);
+				System.out.println("LLAMADA RECIBIDA : El " + this.employee.getName() + " acaba de recibir la llamada " + callId);
 				sleep(this.callTime);
-				System.out.println("******** El empleado " + this.employee.getName() + " contestó la llamada " + callId + ", la llamada duró " + callTime / 1000 + " segundos.");
+				System.out.println("LLAMADA FINALIZADA : La llamada " + callId + " terminó , fue atendida por el " + this.employee.getName() + ", la llamada tuvo una duración de " + callTime / 1000 + " segundos.");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
