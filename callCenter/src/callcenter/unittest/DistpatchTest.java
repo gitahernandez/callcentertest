@@ -36,7 +36,7 @@ public class DistpatchTest {
 		int[ ] timeRange = {5,7};
 		// cantidad de llamadas
 		this.dispatcherLauncherDTO.setCallsQuantity(10);
-		// cantidad de operarios disponibles para contestar las llamdas
+		// cantidad de operarios disponibles para contestar las llamdas.
 		this.dispatcherLauncherDTO.setOperatorsQuantity(10);
 		// cantidad de supervisores disponibles para contestar las llamdas
 		this.dispatcherLauncherDTO.setSupervisorsQuantity(5);
