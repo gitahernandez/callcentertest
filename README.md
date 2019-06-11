@@ -69,9 +69,8 @@ Cuando se reciba una llamada y no exista un empleado disponible para atenderla, 
 	
 	
 	Print de la consola
-	
-	
-	LLAMADA RECIBIDA : El OPERATOR 4 acaba de recibir la llamada 4
+
+LLAMADA RECIBIDA : El OPERATOR 4 acaba de recibir la llamada 4
 LLAMADA RECIBIDA : El OPERATOR 5 acaba de recibir la llamada 5
 LLAMADA RECIBIDA : El OPERATOR 1 acaba de recibir la llamada 1
 LLAMADA RECIBIDA : El OPERATOR 3 acaba de recibir la llamada 3
@@ -100,9 +99,6 @@ El OPERATOR 6 contestó un total de 1 llamadas , felicitaciones OPERATOR 6
 El SUPERVISOR 1 contestó un total de 2 llamadas , felicitaciones SUPERVISOR 1
 El SUPERVISOR 2 contestó un total de 1 llamadas , felicitaciones SUPERVISOR 2
 El MANAGER 1 contestó un total de 1 llamadas , felicitaciones MANAGER 1
-
-
-	
 	
 ```
 
